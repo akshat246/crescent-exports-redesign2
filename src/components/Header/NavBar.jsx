@@ -2,6 +2,8 @@ import Logo from "@/assets/images/logo.jpg";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion"
+
 const NavigationLinks = [
   {
     title: "Home",
@@ -27,7 +29,9 @@ const NavigationLinks = [
 
 export const NavBar = () => {
   return (
-    <div className="flex justify-between items-center p-4 pt-4 gap-4 md:gap-12 mx-4 md:mx-12">
+    <motion.div className="flex justify-around items-center p-4 pt-4 gap-4 md:gap-12 mx-4 md:mx-12"
+    animate={{ opacity: [0, 1] }}
+    transition={{ ease: "easeOut", duration: 1 }}>
       <Link to="/" className="w-2/12 md:w-1/12">
         <img src={Logo} alt="logo" className="sm:w-16 md:w-18 lg:w-24 aspect-square min-w-10" />
       </Link>
@@ -77,6 +81,6 @@ export const NavBar = () => {
         <span className="">CRESCENT</span>
         <span className="">EXPORTS</span>
       </div>
-    </div>
+    </motion.div>
   );
 };
