@@ -33,7 +33,7 @@ export const NavBar = () => {
     animate={{ opacity: [0, 1] }}
     transition={{ ease: "easeOut", duration: 1 }}>
       <Link to="/" className="w-2/12 md:w-1/12">
-        <img src={Logo} alt="logo" className="sm:w-16 md:w-18 lg:w-24 aspect-square min-w-10" />
+        <img src={Logo} alt="logo" className="sm:w-16 md:w-18 lg:w-24 aspect-square min-w-20" />
       </Link>
       <div className="flex bg-gold text-black flex-1 justify-center items-center max-w-4xl px-4 py-2 sm:py-4 md:py-6 lg:py-6 rounded-full w-10/12 md:w-10/12">
         <div className="flex justify-between items-center w-full md:w-10/12 lg:w-9/12 uppercase font-sans font-bold gap-2 md:gap-4">

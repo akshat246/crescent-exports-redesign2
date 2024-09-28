@@ -5,7 +5,7 @@ import background from "@/assets/images/background.jpg";
 export const Layout = () => {
   return (
     <div
-      className="w-full h-full bg-cover bg-center min-h-screen repeat-infinite flex flex-col"   
+      className="w-full h-full bg-cover bg-center min-h-screen repeat-infinte flex flex-col"   
       style={{ backgroundImage: `url(${background})` }}
     >
       <NavBar />
