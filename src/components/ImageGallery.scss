@@ -9,7 +9,9 @@
 }
 
 .gallery img {
-  border:white;
+  display: flex;           /* Center content inside */
+  align-items: center;     /* Vertical alignment */
+  justify-content: center;
   height: 200px;
   width: 200px;
   margin-right: 10px;
