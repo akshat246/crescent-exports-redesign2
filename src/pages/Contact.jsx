@@ -8,6 +8,8 @@ import { Helmet } from "react-helmet-async";
 import emailjs from "@emailjs/browser";
 import { Loader2 } from "lucide-react";
 
+import { motion } from "framer-motion"
+
 import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { set, useForm, useFormState } from "react-hook-form";
@@ -119,7 +121,11 @@ export default function Contact() {
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83203.15320693795!2d77.09447691618303!3d28.627498366828036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1ca864c98aa3%3A0x8d8e94d55f32e4ed!2sCrescent%20Exports%20Private%20Limited!5e0!3m2!1sen!2sin!4v1727654322766!5m2!1sen!2sin";
 
   return (
-    <>
+    <motion.div
+    initial={{  scale: 0.9, opacity: 0 }}
+    animate={{scale: 1, opacity: 1}}
+    transition={{ duration: 1 }}
+    >
       <Helmet prioritizeSeoTags>
         <title className="contactustitle">Contact Us</title>
         <meta
@@ -274,6 +280,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 }

@@ -19,7 +19,7 @@ $blockpadding: 20px;
 
   video {
     margin-top: 2%;
-    flex: 1;
+    width: 80%;
     height: auto;
     border-radius: 20px;
   }
@@ -88,6 +88,12 @@ $blockpadding: 20px;
 
 // medium
 @media (max-width: 768px) {
+  .Aboutintro {
+    video {
+      width: 100%;
+    }
+  }
+
   .AboutCrescentexport {
     display: flex;
     flex-wrap: wrap;

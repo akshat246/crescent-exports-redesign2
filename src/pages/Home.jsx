@@ -16,19 +16,39 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/swiper-bundle.css';
-
-
+import { useState } from 'react';
 
 
 const Home = () => {
+  const [direction, setDirection] = useState(-100)
+
+    function handleDirection() {
+        setDirection(direction*(-1));
+    }
+
   return (
     <div className="homepage">
 
-      <div className="homeintro">
+      <motion.div 
+      className="homeintro"
+      initial={{  scale: 0.9, opacity: 0 }}
+      // whileInView={{ opacity: 1, scale: 1 }}
+      // exit={{  scale: 0.9, opacity: 0 }}
+      animate = {{scale: 1, opacity: 1}}
+      transition={{ duration: 1 }}
+      >
         <h1>Exporting high quality, sustainable and eco friendly products since 1996.</h1>
         <img src={Logo} alt="Picture" />
-      </div>
-      <div className="homeourstory">
+      </motion.div>
+
+      <motion.div 
+      className="homeourstory"
+      initial={{  translateX: direction, opacity: 0 }}
+      whileInView={{ translateX: 0, opacity: 1 }}
+      exit={{  translateX: direction, opacity: 0 }}
+      transition={{ duration: 1 }}
+      onViewportLeave={handleDirection}
+      >
         <h1>Our Story</h1>
         <p>
           In 1990, We established a company named as 'Shaktirugs', where we domestically supplied rugs. Later, we started exporting to other countries mainly USA.
@@ -39,7 +59,8 @@ const Home = () => {
         <p>Our main motive is to keep our customers happy.</p>
         <div className="enquirebutton">
           <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="" target='_top'>ENQUIRE</motion.a></div>
-      </div>
+      </motion.div>
+
       <div className="homeproducts">
         <h1>Products</h1>
       </div>
