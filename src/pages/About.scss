@@ -1,0 +1,96 @@
+$titlesize : 35px;
+$captionsize : 18px;
+$titlecolor : #FFE500;
+$blockpadding: 20px;
+
+.Aboutpage{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Aboutintro{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: $blockpadding;
+    margin-bottom: 25px;
+    // border: 1px solid white;
+    padding: 0px;
+}
+
+
+.Aboutintro > video {
+    margin-top: 2%;
+    flex: 1;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.AboutCrescentexport{
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: $blockpadding;
+    margin-bottom: 30px;
+    // border: 1px solid white;
+
+}
+.AboutCrescentexport > h1{
+    font-size: $titlesize;
+    color: $titlecolor;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.AboutCrescentexport > p{
+    margin-top: 9%;
+    margin-left: 5%;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 22px;
+    
+}
+.AboutCrescentexport > img {
+    border-radius: 30px;
+    flex: 1;
+    max-width: 40%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+.WhyChooseUs{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.WhyChooseUs > h1{
+    font-size: $titlesize;
+    color: $titlecolor;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.WhyChooseUs > p{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 50%;
+    text-align: center;;
+    font-size: 22px;
+    margin-left: 25%;
+}
+
+
+// medium
+@media (min-width: 768px) {}
+
+// small
+@media (min-width: 640px) {}
