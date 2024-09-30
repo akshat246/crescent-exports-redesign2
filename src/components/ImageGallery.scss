@@ -9,9 +9,12 @@
 }
 
 .gallery img {
-  border:white;
-  height: 200px;
-  width: 200px;
+  display: flex;           /* Center content inside */
+  align-items: center;     /* Vertical alignment */
+  justify-content: center;
+  object-fit: cover;
+  height: 12.8vw;
+  width: 12.8vw;
   margin-right: 10px;
   border-radius: 50%;
   transition: transform 0.2s;
