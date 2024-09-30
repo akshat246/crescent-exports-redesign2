@@ -121,7 +121,7 @@ export default function Contact() {
   return (
     <>
       <Helmet prioritizeSeoTags>
-        <title>Contact Us</title>
+        <title className="contactustitle">Contact Us</title>
         <meta
           name="description"
           content="Contact us for any queries or feedback. We are here to help you."
