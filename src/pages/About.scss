@@ -14,7 +14,8 @@ $blockpadding: 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
     padding: $blockpadding;
     margin-bottom: 25px;
     // border: 1px solid white;
@@ -25,7 +26,6 @@ $blockpadding: 20px;
 .Aboutintro > video {
     margin-top: 2%;
     flex: 1;
-    width: 100%;
     height: auto;
     border-radius: 20px;
 }
@@ -40,7 +40,7 @@ $blockpadding: 20px;
 
 }
 .AboutCrescentexport > h1{
-    font-size: $titlesize;
+    font-size: 3vw;
     color: $titlecolor;
     text-align: center;
     width: 50%;
@@ -48,16 +48,16 @@ $blockpadding: 20px;
     margin-bottom: 2%;
 }
 .AboutCrescentexport > p{
-    margin-top: 9%;
+    margin-top: 3%;
     margin-left: 5%;
     width: 50%;
     text-align: center;
-    font-size: 22px;
+    font-size: 1.5vw;
     margin-bottom: 5%;
     
 }
 .AboutCrescentexport > img {
-    border-radius: 30px;
+    border-radius: 3vw;
     flex: 1;
     height:fit-content;
     max-width: 40%;
@@ -72,7 +72,7 @@ $blockpadding: 20px;
 }
 
 .WhyChooseUs > h1{
-    font-size: $titlesize;
+    font-size: 3vw;
     color: $titlecolor;
     text-align: center;
     width: 100%;
@@ -82,10 +82,11 @@ $blockpadding: 20px;
 .WhyChooseUs > p{
     margin-top: 3%;
     margin-bottom: 3%;
-    width: 50%;
+    width: 70%;
     text-align: center;
-    font-size: 22px;
-    margin-left: 25%;
+    font-size: 1.3rem;
+    margin-left: 15%;
+    font-size: 1.5vw;
 }
 
 
